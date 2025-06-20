@@ -1,4 +1,4 @@
-name: React Build Only
+name: Vite React Build
 
 on:
   push:
