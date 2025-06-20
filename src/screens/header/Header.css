@@ -1,0 +1,28 @@
+.menu_dropdown {
+
+  position: fixed;
+  left: 8.3%;  
+  background-color: #326e51;
+  padding: 16px;
+  margin-top: 8px;
+  width: var(--container-7xl);
+  box-shadow: none;
+  border: 1px solid;
+  border-top: none;
+  border-color: #f0efed !important;
+  overflow: hidden;
+  z-index: 1000;     /* Đảm bảo dropdown luôn ở trên */
+  opacity: 0;
+  animation: fadeSlideDown 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
