@@ -1,6 +1,6 @@
 import React from "react";
 
-const banner = () => {
+const SearchFooter = () => {
     return (
         <div className="relative min-h-[491px] bg-[#fefcf5] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
           {/* Background Shapes */}
@@ -10,15 +10,15 @@ const banner = () => {
     
           {/* Text Content */}
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-snug mb-4">
-            Find a company you can trust
+            Nếu bạn chưa biết nên mua gì ?
           </h1>
-          <p className="mt-2 text-lg md:text-xl text-gray-600">Real reviews by real people.</p>
+          <p className="mt-2 text-lg md:text-xl text-gray-600">Chúng tôi có gần đầy đủ mọi thứ !</p>
     
           {/* Search Bar */}
           <div className="mt-6 w-full max-w-lg relative">
             <input
               type="text"
-              placeholder="Search company or category"
+              placeholder="Tim kiếm sản phẩm..."
               className="w-full p-4 pr-12 rounded-full shadow-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 text-base md:text-lg transition duration-200"
             />
             <button className="absolute right-2 top-2 bottom-2 w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center transition duration-200 hover:bg-blue-700">
@@ -56,4 +56,4 @@ const banner = () => {
       );
     }
 
-export default banner;
+export default SearchFooter;

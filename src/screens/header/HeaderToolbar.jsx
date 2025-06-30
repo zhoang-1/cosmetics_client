@@ -11,11 +11,13 @@ import {
 
 const HeaderToolbar = () => {
   return (
-    <header className="w-full bg-[linear-gradient(to_right,_#326e51,_#b0dbb9,_#32ac71)] text-white shadow">
-      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between space-x-4">
+    <header className="w-full bg-[linear-gradient(to_right,_#cb43e7,_#f4a7de,_#f87ca7)] text-white shadow">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between space-x-4 ">
         {/* Logo */}
         <div className="text-3xl font-bold lowercase tracking-wide text-white">
-          guardian
+          <Link to="/"> Guardian
+          </Link>
+         
         </div>
         <div className="float-right items-center justify-between w-full">
           {/* Menu */}
@@ -53,7 +55,7 @@ const HeaderToolbar = () => {
                 className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-full transition shadow text-white text-sm font-semibold"
               >
                 <FaUserCircle />
-                <span>Đăng nhập / Đăng ký Hội Cam</span>
+                <span>Đăng nhập / Đăng ký </span>
               </Link>
 
               <Link

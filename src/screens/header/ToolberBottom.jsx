@@ -7,13 +7,13 @@ const ToolbarBottom = () => {
   const [indexChildShow, setIndexChildShow] = useState(null);
 
   return (
-    <div className="w-full bg-gradient-to-r from-[#326e51] via-[#b0dbb9] to-[#32ac71] text-white shadow">
-      <div className="max-w-7xl mx-auto relative">
-        <ul className="flex items-center justify-between bg-[#326e51] text-white">
+    <div className="w-full  text-white shadow">
+      <div className=" mx-auto relative">
+        <ul className="flex items-center justify-between bg-[#f5519d] text-black">
           {categories?.map((main, i) => (
             <li
               key={i}
-              className="relative px-4 py-2 hover:bg-[#2a5d47] cursor-pointer group"
+              className="static px-4 py-2  cursor-pointer group"
             >
               <Link to={main.link} className="text-sm font-semibold">
                 {main.name}
@@ -21,17 +21,17 @@ const ToolbarBottom = () => {
                   <i className="fa fa-angle-down ml-1" />
                 )}
               </Link>
-
+                
               {/* Dropdown hiển thị đúng vị trí dưới từng mục */}
               {main?.parent?.length > 0 && (
-                <div className="menu_dropdown absolute invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex flex-wrap">
+                <div className="menu_dropdown  invisible group-hover:visible  transition-opacity duration-200">
+                  <div className="w-[90%] mx-auto my-0 flex justify-start flex-wrap ">
                     <ul className="w-1/4 border-r border-white pr-4">
                       {main.parent.map((parent, j) => (
                         <li
                           key={j}
-                          className={`px-4 py-2 cursor-pointer hover:bg-[#3b7a5f] ${
-                            indexChildShow === j ? "bg-[#3b7a5f]" : ""
+                          className={`relative   ${
+                            indexChildShow === j ? "px-4 py-2 cursor-pointer  text-black font-semibold bg-[#f791d5]" : "flex items-center px-4 py-2 cursor-pointer hover:bg-[#fafafa] hover:text-purple-400"
                           }`}
                           onMouseEnter={() => setIndexChildShow(j)}
                         >
@@ -47,7 +47,7 @@ const ToolbarBottom = () => {
                             <li key={k} className="px-4 pr-4">
                               <Link
                                 to={child.link}
-                                className="text-sm text-amber-300 hover:underline"
+                                className="text-sm text-black font-semibold hover:underline"
                               >
                                 {child.name}
                               </Link>
@@ -57,7 +57,7 @@ const ToolbarBottom = () => {
                                     <li key={g} className="py-2">
                                       <Link
                                         to={grand.link}
-                                        className="text-sm text-white hover:underline"
+                                        className="text-sm text-black hover:underline"
                                       >
                                         {grand.name}
                                       </Link>
