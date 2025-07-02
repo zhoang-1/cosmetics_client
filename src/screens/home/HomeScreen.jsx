@@ -1,7 +1,10 @@
 import React from 'react'
 import SearchFooter from './SearchFooter'
 import BannerSlideshow from './BannerSlideshow'
-import Featured_products from './Featured_products'
+import FeaturedProducts from './FeaturedProducts'
+import DiscountProducts from './DiscountProducts'
+import FlashSale from './FlashSale'
+import { allProducts } from "../../utils/cartProducts";
 const HomeScreen = () => {
   return (
     <div className='text-black'>
@@ -9,8 +12,9 @@ const HomeScreen = () => {
 
       <BannerSlideshow/>
       </div>
-      {/* blog */}
-      <Featured_products />
+       <FlashSale products={allProducts} />
+      <FeaturedProducts products={allProducts} />
+      <DiscountProducts products={allProducts} />
       {/* <CategoryList/> */}
       {/* <BrandList/> */}
       <SearchFooter/>

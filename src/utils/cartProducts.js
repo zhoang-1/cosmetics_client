@@ -1,22 +1,94 @@
-export const cartProducts = [
-    {
-        name: "SƠ MI HỒNG PHỐI BÈO SM18642",
-        link: "/products/so-mi-nu-tay-lo-4971",
-        image: "//product.hstatic.net/200000182297/product/13_c8f9a81b442e458aa710f69b9786b60f_1024x1024.jpg",
-        promotion: {
-            value: 20,
-            type: "PERCENT"
-        },
-        price: 799000
-    },
-    {
-        name: "ÁO KHOÁC DÁNG NGẮN AK17272",
-        link: "/products/cong-so-dai-tay-3962",
-        image: "//product.hstatic.net/200000182297/product/1_244382f451314553b584c579e177b96b_1024x1024.jpg",
-        promotion: {
-            value: 30,
-            type: "PERCENT"
-        },
-        price: 890000
-    }
-]
+export const allProducts = [
+  {
+    "id": 1,
+    "name": "Son dưỡng môi hồng tự nhiên",
+    "price": 120000,
+    "originalPrice": 150000,
+    "category": "Trang điểm",
+    "image": "https://via.placeholder.com/300x200?text=Son",
+    "featured": true,
+    "discount": true,
+    "saleEndTime": Date.now() + 3600 * 1000, // kết thúc sau 1 tiếng
+  },
+  {
+    "id": 2,
+    "name": "Kem chống nắng SPF50+",
+    "price": 200000,
+    "category": "Chăm sóc da",
+    "image": "https://via.placeholder.com/300x200?text=Kem",
+    "featured": false,
+    "discount": false
+  },
+  {
+    "id": 3,
+    "name": "Sữa rửa mặt dịu nhẹ",
+    "price": 170000,
+    "category": "Chăm sóc da",
+    "image": "https://via.placeholder.com/300x200?text=Sữa",
+    "featured": true,
+    "discount": false
+  },
+  {
+    "id": 4,
+    "name": "Phấn phủ kiềm dầu",
+    "price": 250000,
+    "category": "Trang điểm",
+    "image": "https://via.placeholder.com/300x200?text=Phấn",
+    "featured": true,
+    "discount": false
+  },
+  {
+    "id": 5,
+    "name": "Toner hoa hồng",
+    "price": 180000,
+    "category": "Nước hoa hồng",
+    "image": "https://via.placeholder.com/300x200?text=Toner",
+    "featured": false,
+    "discount": false
+  },
+  {
+    "id": 6,
+    "name": "Mặt nạ giấy dưỡng ẩm",
+    "price": 90000,
+    "originalPrice": 120000,
+    "category": "Mặt nạ",
+    "image": "https://via.placeholder.com/300x200?text=Mặt+nạ",
+    "featured": true,
+    "discount": true,
+    "saleEndTime": Date.now() + 3600 * 1000, // kết thúc sau 1 tiếng
+    "discountPercent": 30,
+  },{
+    "id": 7,
+    "name": "Son dưỡng môi hồng tự nhiên",
+    "price": 120000,
+    "originalPrice": 150000,
+    "category": "Trang điểm",
+    "image": "https://via.placeholder.com/300x200?text=Son",
+    "featured": true,
+    "discount": true,
+    "saleEndTime": Date.now() + 3600 * 1000, // kết thúc sau 1 tiếng
+     "discountPercent": 30,
+  },,{
+    "id": 8,
+    "name": "Son dưỡng môi hồng tự nhiên",
+    "price": 120000,
+    "originalPrice": 150000,
+    "category": "Trang điểm",
+    "image": "https://via.placeholder.com/300x200?text=Son",
+    "featured": true,
+    "discount": true,
+    "saleEndTime": Date.now() + 3600 * 1000, // kết thúc sau 1 tiếng
+     "discountPercent": 30,
+  },{
+    "id": 9,
+    "name": "Son dưỡng môi hồng tự nhiên",
+    "price": 120000,
+    "originalPrice": 150000,
+    "category": "Trang điểm",
+    "image": "https://via.placeholder.com/300x200?text=Son",
+    "featured": true,
+    "discount": true,
+    "saleEndTime": Date.now() + 3600 * 1000, // kết thúc sau 1 tiếng
+     "discountPercent": 20,
+  },
+];
